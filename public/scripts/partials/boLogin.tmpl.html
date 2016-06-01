@@ -1,0 +1,27 @@
+<section class="loginSection">
+    <div class="container">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-sm-push-4 col-md-push-4 col-sm-pull-4 col-md-pull-4">
+            <form name="loginForm" ng-submit="vm.login()" class="form-signin">
+                <h2 class="form-signin-heading text-center">Login</h2>
+                <p>
+                    <label for="inputUsername" class="sr-only">Username</label>
+                    <input ng-model="vm.username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus="">
+                </p>
+                <p>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input ng-model="vm.password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                </p>
+                <!-- <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div> -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-3 col-md-push-3 col-sm-pull-3 col-md-pull-3">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Valider</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<div class="container">
+    <uib-tabset active="activeForm">
+        <uib-tab index="0" heading="A modérer">
+            <div class="faq-bo">
+                <div class="faq-bo-heading">
+                    <span>Envoyé par [adresse e-mail] - Le [date-heure]</span>
+                    <span>Catégorie : [Sujet]</span>
+                </div>
+                <div class="faq-bo-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Répondre à la question</button>
+                    <button class="btn btn-primary">Ne pas répondre et supprimer</button>
+                </div>
+            </div>
+            <form name="nestedForm">
+                <div class="form-group" ng-show="vm.showModForm">
+                    <label>Name</label>
+                    <input type="text" class="form-control" required ng-model="vm.model.name" />
+                </div>
+            </form>
+        </uib-tab>
+        <uib-tab heading="Archives">
+            <uib-accordion close-others="oneAtATime">
+                <uib-accordion-group heading="Dynamic Body Content">
+                    <p>The body of the uib-accordion group grows to fit the contents</p>
+                </uib-accordion-group>
+                <uib-accordion-group heading="Dynamic Body Content">
+                    <p>The body of the uib-accordion group grows to fit the contents</p>
+                </uib-accordion-group>
+                <uib-accordion-group heading="Dynamic Body Content">
+                    <p>The body of the uib-accordion group grows to fit the contents</p>
+                </uib-accordion-group>
+            </uib-accordion>
+        </uib-tab>
+    </uib-tabset>
+</div>

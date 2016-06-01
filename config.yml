@@ -1,0 +1,3 @@
+ global:
+    lessc: 1.7
+    autoprefixer-browsers: "chrome > 10, firefox > 10, ie > 7, android > 2, ios > 5"
